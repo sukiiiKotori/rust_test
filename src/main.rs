@@ -1,8 +1,7 @@
 mod arc_test;
 mod genetics_test;
 mod macro_test;
-
-const NAME: &str = "hpy";
+mod lifetimes_test;
 
 fn main() {
     println!("Hello, world!");
