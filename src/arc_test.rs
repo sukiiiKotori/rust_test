@@ -1,12 +1,12 @@
 use std::sync::Arc;
 
-fn get_string(re: &String) -> String {
+fn get_string(re: ???) -> String {
     //请完成这个函数，作用是返回该智能指针中包裹的原字符串
     //返回值类型已给出，请自行写出函数的形参
     todo!();
 }
 
-fn get_strong_count(re: &Arc<String>) -> usize {
+fn get_strong_count(re: ???) -> usize {
     //请完成这个函数，作用是返回该智能指针中的强引用计数值
     //返回值类型已给出，请自行写出函数的形参
     todo!();
