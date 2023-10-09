@@ -1,9 +1,10 @@
 // 为下面的结构体添加生命周期
 struct Book??? {
-    author: &???str,
-    title: &???str,
+    author: ???str,
+    title: ???str,
 }
 
+#[cfg(test)]
 mod tests {
     #[test]
     fn testcase4() {
@@ -12,6 +13,7 @@ mod tests {
         let title = String::from("Fish Flying");
         let book = Book { author: &name, title: &title };
 
-        println!("{} by {}", book.title, book.author);
+        assert_eq!(book.author, "Jill Smith");
+        assert_eq!(book.title, "Fish Flying");
     }
 }
