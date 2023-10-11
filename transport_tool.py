@@ -1,10 +1,10 @@
 import socket
 
+name='test111'#把这里改成你自己的姓名
+
 def CreatCilent():
     tcp_socket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-    ip=input('please input server IP: ')
-    tcp_socket.connect((ip,6666))
-    name=input('please input your name: ')
+    tcp_socket.connect(('192.168.1.116',6666))
     tcp_socket.send((name).encode('utf-8'))
     while True:
         while True:
