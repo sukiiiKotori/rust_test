@@ -17,16 +17,14 @@ def CreatCilent():
         # 转为字节流
         data = f.read()
         f.close()
-        # 计算长度
         lenth = len(data)
-        # 发送长度
+        # 发送文件长度
         lenth_bytes = lenth.to_bytes(length=4, byteorder='big', signed=False)
         tcp_socket.send(lenth_bytes)
         # 发送文件名
         fname = path
-        print(fname)
         tcp_socket.send((fname+'\n').encode('ascii'))
-        # 发送文件流
+        # 发送文件字节流
         print("sending file size:%dB" % len(data))
         tcp_socket.send(data)
         print(fname+" is all sent!")
