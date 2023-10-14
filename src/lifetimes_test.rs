@@ -1,4 +1,5 @@
 // 为下面的结构体添加生命周期
+#[allow(unused)]
 struct Book??? {
     author: ???str,
     title: ???str,
