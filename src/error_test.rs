@@ -1,7 +1,7 @@
 #[allow(unused)]
 fn divide(a: i32, b: i32) -> ??? {
     //实现一个除法函数，需要包含对于b为0时的错误处理
-    //错误信息为 "Cannot divided by zero"
+    //错误信息为 "Cannot divide by zero"
 }
 
 #[allow(unused)]
@@ -17,7 +17,7 @@ mod tests {
     #[test]
     fn test_divide() {
         assert_eq!(divide(10, 2), Ok(5));
-        assert_eq!(divide(10, 0), Err("Cannot divided by zero".to_string()));
+        assert_eq!(divide(10, 0), Err("Cannot divide by zero".to_string()));
     }
 
     #[test]
