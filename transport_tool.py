@@ -2,7 +2,7 @@ import os
 import time
 import socket
 
-name = 'test'  # 把这里改成你自己的姓名
+name = 'test'  # 把这里改成你自己的 学号-姓名
 
 def CreatCilent():
     tcp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

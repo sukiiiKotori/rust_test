@@ -1,7 +1,6 @@
 #[allow(unused)]
 macro_rules! add {
     //编写一个计算两数之和的宏
-    todo!()
 }
 
 #[cfg(test)]
